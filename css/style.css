@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -12,21 +14,17 @@ html {
   color: var(--txt);
 }
 
-body,
-h1,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 .none {
   display: none;
+}
+
+.page {
+  position: relative;
 }
 
 .container {
   margin: 0 auto;
   width: 375px;
-  background-color: #eef;
 }
 
 @media (max-width: 375px) {
@@ -35,13 +33,17 @@ p {
   }
 }
 
+
 /**********
 HEADER
 **********/
 
 .header {
+  margin-bottom: 0px;
   padding: 32px;
-  background-color: #F6E5F7;
+  height: 636px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
 }
 
 .header__logo {
@@ -57,29 +59,38 @@ HEADER
 }
 
 .header__text {
+  margin-bottom: 0px;
   font-weight: 700;
   font-size: 18px;
   line-height: 125%;
-  margin-bottom: 0px;
+}
+
+.header__price {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  height: 23px;
+  border-radius: 20px;
+  background: linear-gradient(0deg, rgba(241, 241, 241, 0.6), rgba(241, 241, 241, 0.6)), radial-gradient(100% 100% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%)
 }
 
 .header__new-price {
+  display: inline-block;
   text-align: center;
-  padding: 2px 7px;
+  padding: 0 7px;
   font-size: 18px;
   line-height: 120%;
   border-radius: 20px;
-  background-color: #E0B8FF;
+  background: radial-gradient(100% 100% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%)
 }
 
 .header__old-price {
-  padding: 6px 5px;
+  display: inline-block;
+  padding: 0 5px;
   font-size: 13px;
   line-height: 120%;
   color: var(--txt-gray);
   text-decoration: line-through;
-  border-radius: 20px;
-  background-color: #E0B8FF;
 }
 
 .header__imgs {
@@ -93,12 +104,64 @@ HEADER
   top: 17px;
   right: 0px;
   transform: rotate(-8deg);
-  background-color: #fff;
 }
-
 
 .header__txt {
   position: absolute;
   top: 146px;
   left: 73px;
+}
+
+.header__overlay {
+  position: absolute;
+  width: 375px;
+  height: 636px;
+  left: calc(50% - 375px/2);
+  top: 0px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(90deg, #FF5C4D 0%, #EB469F 25%, #DA45AC 50%, #8341EF 75%, #3F68F9 100%);
+  opacity: 0.22;
+}
+
+/**********
+/HEADER
+**********/
+
+.section__title {
+  padding-bottom: 32px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.7px;
+}
+
+/**********
+ADVANTAGES
+**********/
+.advantages {
+  padding: 0 32px;
+}
+
+.advantages__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  background-color: #def;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: #fef;
+}
+
+.advantages__img {
+  align-items: center;
+  width: 83px;
+  height: 83px;
+  background-color: #5ff;
+}
+
+.advantages__txt {
+  text-align: left;
 }
