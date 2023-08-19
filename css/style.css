@@ -226,9 +226,19 @@ EVENTS
 
 .events__slider-clip {
   position: absolute;
-  top: -118px;
-  right: -65px;
+  top: -34px;
+  right: -33px;
   transform: rotate(135deg);
+}
+
+.blur {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  background-color: #C1A4FF;
+  filter: blur(20px);
 }
 
 .events__slider-arrows {
@@ -282,6 +292,7 @@ BUY
 
 .buy__imgs {
   margin-top: 32px;
+  height: 306px;
   position: relative;
 }
 
@@ -293,6 +304,10 @@ BUY
 
 .buy__community {
   transform: rotate(-12.68deg) translateX(6px);
+}
+
+.buy__ellipse {
+  transform: translate(-20px, -320px) rotate(-140deg) ;
 }
 /**********
 /BUY
@@ -329,6 +344,7 @@ ABONEMENT
   letter-spacing: 0px;
   border-radius: 36px;
   background-color: var(--bg-btn);
+  filter: drop-shadow(0px 0px 16px var(--bg-btn));
   cursor: pointer;
 }
 /**********
