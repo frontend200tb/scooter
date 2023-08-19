@@ -37,9 +37,7 @@ html {
 /**********
 HEADER
 **********/
-
 .header {
-  margin-bottom: 0px;
   padding: 32px;
   height: 636px;
   position: relative;
@@ -126,6 +124,7 @@ HEADER
 /HEADER
 **********/
 
+
 .section__title {
   font-weight: 900;
   font-size: 32px;
@@ -133,10 +132,12 @@ HEADER
   letter-spacing: -0.7px;
 }
 
+
 /**********
 ADVANTAGES
 **********/
 .advantages {
+  margin-bottom: 33px;
   padding: 0 32px;
 }
 
@@ -170,5 +171,41 @@ ADVANTAGES
   font-size: 16px;
   line-height: 120%;
   letter-spacing: 0px;
+}
+/**********
+ADVANTAGES
+**********/
+
+
+/**********
+EVENTS
+**********/
+.events {
+  padding: 32px;
+}
+
+.events__txt {
+  margin-top: 23px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+.events__slider {
+  margin-top: 43px;
+  position: relative;
+  transform: translateX(-15px);
+}
+
+.events__slider-img {
+  border-radius: 48px;
+}
+
+.events__slider-arrows {
+  position: absolute;
+  top: -118px;
+  right: -65px;
+  transform: rotate(135deg);
 }
 
