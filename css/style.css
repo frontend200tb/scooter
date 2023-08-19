@@ -7,6 +7,7 @@
 :root {
   --txt: #21201F;
   --txt-gray: #808080;
+  --txt-footer: #C5C5C5;
   --bg-btn: #FFDE40;
 }
 
@@ -308,4 +309,21 @@ ABONEMENT
   letter-spacing: 0px;
   border-radius: 36px;
   background-color: var(--bg-btn);
+}
+/**********
+/ABONEMENT
+**********/
+
+
+/**********
+FOOTER
+**********/
+.footer {
+  margin: 72px 32px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  word-spacing: 0.2px;
+  color: var(--txt-footer);
 }
