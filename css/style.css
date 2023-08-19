@@ -7,7 +7,7 @@
 :root {
   --txt: #21201F;
   --txt-gray: #808080;
-  --bg-arrow: #FFDE40;
+  --bg-btn: #FFDE40;
 }
 
 html {
@@ -58,6 +58,7 @@ HEADER
   font-weight: 500;
   font-size: 18px;
   line-height: 125%;
+  word-spacing: 0.5px;
 }
 
 .header__price {
@@ -140,15 +141,16 @@ ADVANTAGES
 .advantages__items {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  row-gap: 25px;
   margin-top: 27px;
+  height: 431px;
 }
 
 .advantages__item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 16px;
+  column-gap: 17px;
   justify-content: start;
 }
 
@@ -165,8 +167,9 @@ ADVANTAGES
   align-items: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 115%;
   letter-spacing: 0px;
+  word-spacing: 0.2px;
 }
 /**********
 /ADVANTAGES
@@ -177,7 +180,7 @@ ADVANTAGES
 EVENTS
 **********/
 .events {
-  margin-top: 33px;
+  margin-top: 32px;
   padding: 32px;
 }
 
@@ -187,6 +190,7 @@ EVENTS
   font-size: 16px;
   line-height: 120%;
   letter-spacing: 0px;
+  word-spacing: 0.2px;
 }
 
 .events__slider {
@@ -221,7 +225,7 @@ EVENTS
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: var(--bg-arrow);
+  background-color: var(--bg-btn);
   cursor: pointer;
 }
 
@@ -252,6 +256,7 @@ BUY
   font-size: 16px;
   line-height: 120%;
   letter-spacing: 0px;
+  word-spacing: 0.2px;
 }
 
 .buy__imgs {
@@ -267,4 +272,40 @@ BUY
 
 .buy__community {
   transform: rotate(-12.68deg) translateX(6px);
+}
+/**********
+/BUY
+**********/
+
+
+/**********
+ABONEMENT
+**********/
+.abonement {
+  margin-top: 29px;
+  padding: 0 32px;
+}
+
+.abonement__txt {
+  margin-top: 23px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  word-spacing: 0.2px;
+}
+
+.abonement__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 27px;
+  width: 311px;
+  height: 49px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  border-radius: 36px;
+  background-color: var(--bg-btn);
 }
