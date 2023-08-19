@@ -27,6 +27,7 @@ html {
 .container {
   margin: 0 auto;
   width: 375px;
+  overflow: hidden;
 }
 
 @media (max-width: 375px) {
@@ -40,7 +41,7 @@ html {
 HEADER
 **********/
 .header {
-  padding: 32px;
+  padding: 32px 32px 0 32px;
   height: 636px;
   position: relative;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
@@ -119,6 +120,24 @@ HEADER
   opacity: 0.22;
 }
 
+.header__btn {
+  position: fixed;
+  bottom: 24px;
+  transform: translateX(calc(50% - 124px));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 311px;
+  height: 49px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  border-radius: 36px;
+  background-color: var(--bg-btn);
+  cursor: pointer;
+  z-index: 2;
+}
 /**********
 /HEADER
 **********/
@@ -136,14 +155,15 @@ HEADER
 ADVANTAGES
 **********/
 .advantages {
+  margin-top: -1px;
   padding: 0 32px;
 }
 
 .advantages__items {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
-  margin-top: 27px;
+  row-gap: 24px;
+  margin-top: 28px;
   height: 431px;
 }
 
@@ -168,7 +188,7 @@ ADVANTAGES
   align-items: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 115%;
+  line-height: 118%;
   letter-spacing: 0px;
   word-spacing: 0.2px;
 }
@@ -309,6 +329,7 @@ ABONEMENT
   letter-spacing: 0px;
   border-radius: 36px;
   background-color: var(--bg-btn);
+  cursor: pointer;
 }
 /**********
 /ABONEMENT
