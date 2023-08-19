@@ -7,6 +7,7 @@
 :root {
   --txt: #21201F;
   --txt-gray: #808080;
+  --bg-arrow: #FFDE40;
 }
 
 html {
@@ -202,10 +203,37 @@ EVENTS
   border-radius: 48px;
 }
 
-.events__slider-arrows {
+.events__slider-clip {
   position: absolute;
   top: -118px;
   right: -65px;
   transform: rotate(135deg);
 }
 
+.events__slider-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 12px;
+  margin-top: 24px;
+}
+
+.events__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--bg-arrow);
+  cursor: pointer;
+}
+
+.events__arrow:first-child {
+  transform: rotate(180deg);
+}
+
+.arrow-disable {
+  opacity: 50%;
+  cursor: auto;
+}
