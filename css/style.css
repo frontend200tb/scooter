@@ -25,6 +25,7 @@ html {
 }
 
 .container {
+  position: relative;
   margin: 0 auto;
   overflow: hidden;
 }
