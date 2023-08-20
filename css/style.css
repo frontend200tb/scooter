@@ -131,11 +131,10 @@ HEADER
   height: 401.9px;
   top: 50px;
   left: 0px;
-
   background: #8241EF;
   opacity: 0.5;
   filter: blur(100px);
-  border-radius: 11.0115px;
+  border-radius: 50%;
   transform: rotate(-140.03deg);
 }
 
@@ -545,14 +544,78 @@ ADVANTAGES
     width: 400px;
   }
 
+  .egg1 {
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    width: 58px;
+  }
+  
+  .vec1 {
+    position: absolute;
+    top: 24px;
+    left: 19px;
+    width: 55px;
+    transform: rotate(4deg);
+  }
+  
+  .egg2 {
+    position: absolute;
+    top: 8px;
+    left: 24px;
+    width: 43px;
+  }
+  
+  .vec2 {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    width: 63px;
+  }
+  
+  .sup2 {
+    position: absolute;
+    top: -2px;
+    left: 67px;
+    width: 27px;
+  }
+  
+  .egg3 {
+    position: absolute;
+    top: 20px;
+    left: 11px;
+    width: 43px;
+  }
+  
+  .vec3 {
+    position: absolute;
+    top: 13px;
+    left: 21px;
+    width: 50px;
+  }
+  
+  .egg4 {
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    width: 54px;
+  }
+  
+  .vec4 {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 54px;
+    transform: rotate(-5deg);
+  }
+
   .advantages__txt {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    min-height: 100px;
     font-weight: 500;
     font-size: 24px;
-    line-height: 118%;
-    letter-spacing: 0px;
-    word-spacing: 0.2px;
+    line-height: 120%;
   }
 }
 /**********
@@ -679,7 +742,7 @@ EVENTS
 
 @media screen and (min-width: 1440px) {
   .events {
-    margin-top: 126px;
+    margin-top: 122px;
     padding: 0 262px;
   }
 
@@ -1050,7 +1113,7 @@ WANT
 
 @media screen and (min-width: 1440px) {
   .want {
-    margin-top: 0px;
+    margin-top: -1px;
     padding-left: 36px;
   }
 
