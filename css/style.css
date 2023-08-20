@@ -873,7 +873,8 @@ BUY
 
 @media screen and (min-width: 1440px) {
   .buy {
-    padding: 0 260px;
+    padding-left: 260px;
+    width: 700px;
   }
 
   .buy__title {
@@ -919,15 +920,8 @@ BUY
 /**********
 WANT
 **********/
-.want {
-  margin-top: 29px;
-  padding: 0 32px;
-}
-
 .want__txt {
-  margin-top: 23px;
   font-weight: 500;
-  font-size: 16px;
   line-height: 120%;
   letter-spacing: 0px;
   word-spacing: 0.2px;
@@ -937,11 +931,7 @@ WANT
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 28px;
-  width: 311px;
-  height: 49px;
   font-weight: 500;
-  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0px;
   border-radius: 36px;
@@ -949,8 +939,113 @@ WANT
   filter: drop-shadow(0px 0px 16px var(--bg-btn));
   cursor: pointer;
 }
+
+@media screen and (max-width: 375px) {
+  .want {
+    margin-top: 29px;
+    padding: 0 32px;
+  }
+
+  .want__imgs {
+    display: none;
+  }
+
+  .want__txt {
+    margin-top: 23px;
+    font-size: 16px;
+  }
+
+  .want__btn {
+    margin-top: 28px;
+    width: 311px;
+    height: 49px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .want {
+    margin-top: 29px;
+    padding: 0 32px;
+  }
+
+  .want__imgs {
+    display: none;
+  }
+
+  .want__txt {
+    margin-top: 23px;
+    font-size: 16px;
+  }
+
+  .want__btn {
+    margin-top: 28px;
+    width: 311px;
+    height: 49px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .want {
+    margin-top: 0px;
+    padding-left: 36px;
+  }
+
+  .want__imgs {
+    display: block;
+    position: relative;
+    left: 0px;
+    height: 600px;
+  }
+
+  .want__scooter {
+    position: absolute;
+    top: -159px;
+    left: -93px;
+    width: 742px;
+    transform: rotate(-13.16deg);
+  }
+
+  .want__plus {
+    position: absolute;
+    top: 67px;
+    left: 10px;
+    width: 270px;
+    transform: rotate(6.06deg);
+  }
+
+  .want__ellipse {
+    position: absolute;
+    top: 30px;
+    left: 240px;
+    width: 250px;
+    height: 250px;
+    background-color: #C1A4FF;
+    filter: blur(100px);
+    z-index: -1;
+  }
+  
+  .want-title {
+    margin-top: -36px;
+    width: 419px;
+  }
+
+  .want__txt {
+    margin-top: 35px;
+    width: 419px;
+    font-size: 24px;
+  }
+
+  .want__btn {
+    margin-top: 43px;
+    width: 281px;
+    height: 65px;
+    font-size: 24px;
+  }
+}
 /**********
-/ABONEMENT
+/WANT
 **********/
 
 
