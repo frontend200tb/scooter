@@ -596,6 +596,7 @@ EVENTS
     align-content: start;
     row-gap: 24px;
     column-gap: 22px;
+    position: static;
   }
 
   .events__slider-img {
@@ -654,7 +655,6 @@ EVENTS
     right: -50px;
     background-color: #C1A4FF;
     filter: blur(30px);
-    z-index: -1;
   }
 
   .events__place {
