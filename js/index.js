@@ -4,41 +4,43 @@ console.log('frontend200tb go-scooter-pass');
 /*
 Работа слайдера
 */
-const img = Array.from(document.querySelectorAll('.js-img'));
-const left = document.querySelector('.js-left');
-const right = document.querySelector('.js-right');
+const slider = document.querySelector('.js-slider');
+const btnLeft = document.querySelector('.js-left');
+const btnRight = document.querySelector('.js-right');
 
 let currentImg = 0;
-img[currentImg].classList.remove('none');
+const maxImg = 3;
+let leftPosition = 0;
+const widthImg = 353;
 
-left.classList.add('arrow-disable');
+btnLeft.classList.add('arrow-disable');
 
-left.addEventListener('click', leftClick);
-right.addEventListener('click', rightClick);
+btnLeft.addEventListener('click', leftClick);
+btnRight.addEventListener('click', rightClick);
 
 function leftClick() {
-  if (left.classList.contains('arrow-disable')) {
+  if (btnLeft.classList.contains('arrow-disable')) {
     return
   }
-  right.classList.remove('arrow-disable');
-  img[currentImg].classList.add('none');
+  btnRight.classList.remove('arrow-disable');
   currentImg--;
-  img[currentImg].classList.remove('none');
+  leftPosition += widthImg; 
+  slider.style.left = `${leftPosition}px`;
   if (currentImg === 0) {
-    left.classList.add('arrow-disable');
+    btnLeft.classList.add('arrow-disable');
   }
 }
 
 function rightClick() {
-  if (right.classList.contains('arrow-disable')) {
+  if (btnRight.classList.contains('arrow-disable')) {
     return
   }
-  left.classList.remove('arrow-disable');
-  img[currentImg].classList.add('none');
+  btnLeft.classList.remove('arrow-disable');
   currentImg++;
-  img[currentImg].classList.remove('none');
-  if (currentImg === 3) {
-    right.classList.add('arrow-disable');
+  leftPosition -= widthImg; 
+  slider.style.left = `${leftPosition}px`;
+  if (currentImg === maxImg) {
+    btnRight.classList.add('arrow-disable');
   }
 }
 /*

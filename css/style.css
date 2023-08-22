@@ -496,6 +496,9 @@ EVENTS
   display: flex;
   flex-direction: row;
   column-gap: 10px;
+  position: relative;
+  left: 0px;
+  transition: left 1s ease;
 }
 
 .events__slider-img {
@@ -547,6 +550,7 @@ EVENTS
   right: 0px;
   background-color: #C1A4FF;
   filter: blur(20px);
+  z-index: -1;
 }
 
 .events__place,
